@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트</title>
+</head>
+<body>
+<h1>DOM API - 자식태그 추가하기.</h1>
+<div id ="d1">
+<img src = "../img/IMG_20180302_000600.jpg">
+<img src = "../img/IMG_20180302_000900.jpg">
+<img src = "../img/IMG_20180302_192552.jpg">
+<img src = "../img/PSX_20180303_013613.jpg">
+<img src = "../img/KakaoTalk_20180725_152530883.jpg">
+</div>
+<style>
+img{
+height : 150px;
+margin : 20px;
+}
+</style>
+
+<script>
+"use strict"
+
+setInterval(() => {
+var e = document.querySelector("#d1> img:first-child");
+//d1태그에 막내자식태그를 단다. 
+d1.appendChild(e);	
+},1000);
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>멤버 목록</title>
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/common.css">
+<style>
+.btn{
+margin : 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>MEMBER LIST</h2>
+<button href='view.html' class="btn btn-outline-secondary btn-sm">새 회원 추가</button>
+<table id = "eListTable" class="table table-hover">
+<thead>
+<tr><th>아이디</th><th>이메일</th></tr>
+</table>
+
+<div>
+<button id="ePrevBtn" class="btn btn-outline-success btn-sm">이전</button>
+<span id="ePageNo"></span>
+<button id="eNextBtn" class="btn btn-outline-success btn-sm">다음</button>
+</div>
+
+<!-- 스크립트 소스는 html코드가 끝난 뒤 제일 마지막에 붙인다.-->
+<script src = "../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/jquery.bit.js"></script>
+<script src="list.js"></script>
+</div>
+</body>
+</html>

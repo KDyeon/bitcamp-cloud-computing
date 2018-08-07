@@ -10,7 +10,7 @@
 **/.vscode
 *.DS_Store
 **/node_modules
-**/package-lock.json
+
 **/security2.properties
 **/jdbc.properties
 

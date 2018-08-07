@@ -1,0 +1,11 @@
+/*
+ *모듈을 정의하고 사용하기 .  
+ */
+
+/*
+ * 리턴값 destructuring
+ * >> require() 가 리턴한 exports 객체를 분해해서 받을 수 있다. 
+ */
+var {plus, minus} = require('./exam03_m.js');
+console.log(plus(10,20));
+console.log(minus(10,20));
